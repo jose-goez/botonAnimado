@@ -1,0 +1,132 @@
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color:aqua;
+    background-color: black;
+    padding: 7px;
+    border-radius: 50px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+}
+a:hover{
+    text-decoration: underline;
+    animation: color 5s;
+}
+@keyframes color {
+    0%{
+        background-image: url(Granja.png);
+        background-position: center;
+        background-size: cover;
+    }
+}
+.burbujas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+
+
+.burbuja:nth-child(1){
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top:40px;
+    animation: hijo1 0.1s  ;
+
+}
+@keyframes hijo1 {
+    0%{
+        transform:translateY(-50px);
+    }
+}
+
+.burbuja:nth-child(2){
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(106, 75, 10);
+    position: absolute;
+    top:70px;
+    left: 30px;
+    animation: hijo1 0.2s  ;
+
+}
+
+.burbuja:nth-child(3){
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(216, 253, 11);
+    position: absolute;
+    top:30px;
+    left: 30px;
+    animation: hijo1 0.3s  ;
+    
+}
+.burbuja:nth-child(4){
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: rgb(241, 12, 214);
+    position: absolute;
+    bottom:10px;
+    left: 30px;
+    animation: hijo2 0.1s;
+}
+@keyframes hijo2 {
+    0%{
+        transform:translateY(50px);
+    }
+}
+.burbuja:nth-child(5){
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(240, 11, 118);
+    position: absolute;
+    bottom:7px;
+    left: 30px;
+    animation: hijo2 0.2s;
+
+}
+.burbuja:nth-child(6){
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: rgb(29, 98, 9);
+    position: absolute;
+    bottom:1px;
+    left: 10px;
+    animation: hijo2 0.3s;
+
+}
+.burbuja:nth-child(7){
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: rgb(78, 7, 244);
+    position: absolute;
+    bottom:px;
+    right: 1px;
+    animation: hijo3 0.1s;
+}
+@keyframes hijo3 {
+    0%{
+        transform:translateX(50px);
+    }
+}
+.burbuja:nth-child(8){
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(242, 11, 11);
+    position: absolute;
+    bottom:px;
+    right: 10px;
+    animation: hijo3 0.2s;
+
+}
